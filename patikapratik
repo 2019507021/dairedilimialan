@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class pratikalan {
+
+    public static void main(String[] args) {
+        //yarıçap r
+        //merkez ölçüsü alfa
+        int r, alfa;
+        double pi = 3.14;
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Dairenin Yarıçapı Giriniz:");
+        r = inp.nextInt();
+        System.out.print("Merkez Ölçüsünün Açısı:");
+        alfa = inp.nextInt();
+
+        double daireDilimAlan = (pi * (r * r) * alfa)/360;
+        System.out.print("Dairenin Diliminin Alanı:" + daireDilimAlan);
+
+
+    }
+}
